@@ -42,7 +42,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-    <script>window.location = "https://bzhunt.fr"</script>
+    <script>window.location = 'https://bzhunt.fr'</script>
         <Meta />
         <Links />
       </head>
