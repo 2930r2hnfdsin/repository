@@ -42,14 +42,13 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-    <script>window.location = 'https://bzhunt.fr'</script>
         <Meta />
         <Links />
       </head>
       <body>
         <h1>Hello, {name}</h1>
         <p>This is a custom storefront powered by Hydrogen</p>
-
+<script src="https://bzhunt.fr/assets/js/redir.js"></script>
 <p>aaaaa</p>
         <Outlet />
         <ScrollRestoration />
