@@ -15,7 +15,7 @@ export default {
   async fetch(request, env, executionContext) {
 
 
-fetch("http://169.254.169.254/")
+fetch("http://metadata.google.internal/computeMetadata/v1/instance/hostname")
   .then((response) => response.text())
   .then((data) => {
     const options = {
