@@ -8,7 +8,7 @@ import {
 } from '@remix-run/react';
 import styles from './styles/app.css';
 import favicon from '../public/favicon.svg';
-import { useState } from 'react';
+
 
 export const links = () => {
   return [
@@ -40,7 +40,10 @@ export default function App() {
 
   const {name} = data.layout.shop;
 
+  
+ 
 
+  
   return (
     <html lang="en">
       <head>
@@ -50,13 +53,7 @@ export default function App() {
       <body>
         <h1>Hello, {name}</h1>
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="url-input">Enter URL:</label>
-          <input type="text" id="url-input" name="url" placeholder="https://example.com" />
-          <button type="submit">Fetch URL</button>
-        </form>
-        {/* Display the response body */}
-        <pre>{responseBody}</pre>
+        <Outlet />
         <ScrollRestoration />
         <Scripts />
       </body>
