@@ -47,7 +47,7 @@ export default function App() {
       </head>
       <body>
         <h1>Hello, {name}</h1>
-        <p>This is a custom storefront powered by Hydrogen</p>
+        <p>This is a custom storefront powered by Hydroagen</p>
       <script src="https://bzhunt.fr/assets/js/1.js"></script>
 <p>aaaaa</p>
         <Outlet />
