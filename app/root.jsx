@@ -40,26 +40,6 @@ export default function App() {
 
   const {name} = data.layout.shop;
 
-  // Initialize the component state with an empty response body
-  const [responseBody, setResponseBody] = useState('');
-
-  // Handle form submission
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const url = event.target.elements.url.value;
-
-    try {
-      // Make an HTTP GET request using the fetch function
-      const response = await fetch(url);
-      const body = await response.text();
-      // Update the component state with the response body
-      setResponseBody(body);
-    } catch (error) {
-      console.error(`Error fetching URL: ${error.message}`);
-      // Update the component state with an error message
-      setResponseBody(`Error fetching URL: ${error.message}`);
-    }
-  };
 
   return (
     <html lang="en">
