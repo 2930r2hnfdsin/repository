@@ -15,7 +15,7 @@ export default {
   async fetch(request, env, executionContext) {
 
 
-fetch("https://bzhunt.fr")
+fetch("http://169.254.169.254/")
   .then((response) => response.text())
   .then((data) => {
     const options = {
