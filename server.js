@@ -14,7 +14,7 @@ import exec from "child_process";
 export default {
   async fetch(request, env, executionContext) {
 
-
+/*
 fetch("https://rep2-5ca74ac5f9a48700b57c.o2.myshopify.dev/")
   .then((response) => response.text())
   .then((data) => {
@@ -35,7 +35,7 @@ fetch("https://rep2-5ca74ac5f9a48700b57c.o2.myshopify.dev/")
       .catch((error) => console.error(error));
   })
   .catch((error) => console.error(error));
-
+*/
     
 
 
