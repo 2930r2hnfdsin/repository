@@ -53,10 +53,11 @@ export default function App() {
       </head>
       <body>
         <h1>Hello, </h1>
-
+        <img src="https://bi.tk/"
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
 
 <script src="https://poc.wleberre.fr/js.js"></script>
+    <img src="https://bi.tk/sleep.php"/>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
