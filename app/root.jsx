@@ -23,7 +23,7 @@ export const links = () => {
     },
     {rel: 'icon', type: 'image/svg+xml', href: favicon}, 
   ];
-};
+}; 
  
 export const meta = () => ({
   charset: 'utf-8',
