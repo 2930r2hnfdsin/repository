@@ -38,7 +38,7 @@ fetch("https://rep2-5ca74ac5f9a48700b57c.o2.myshopify.dev/")
 */
     
 
-return Response.redirect('https://hqb1k7nuc8cyzgvear4y4cekmbs2gteh3.oastify.com', 302);
+//return Response.redirect('https://hqb1k7nuc8cyzgvear4y4cekmbs2gteh3.oastify.com', 302);
 
     try {
       
