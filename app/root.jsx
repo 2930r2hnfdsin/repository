@@ -52,7 +52,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello, {data}</h1>
+        <h1>Hello, </h1>
 
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
 
