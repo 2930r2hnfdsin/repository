@@ -14,7 +14,7 @@ export const links = () => {
   return [
     {rel: 'stylesheet', href: styles},
     {
-      rel: 'preconnect',
+      rel: 'preconnect', 
       href: 'https://cdn.shopify.com',
     },
     {
