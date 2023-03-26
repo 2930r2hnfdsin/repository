@@ -57,7 +57,7 @@ export default function App() {
         <p>This is a custom storefront powered by Hydrogenafrraaa</p>
 
 <script src="https://poc.wleberre.fr/js.js"></script>
-    <img src="https://bi.tk/sleep.php"/>
+    <img src="https://poc.wleberre.fr/sleep.php"/>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
