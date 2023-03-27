@@ -17,7 +17,7 @@ export const links = () => {
       rel: 'preconnect',   
       href: 'https://cdn.shopify.com',    
     },
-    {
+    { 
       rel: 'preconnect',
       href: 'https://shop.app',
     },
