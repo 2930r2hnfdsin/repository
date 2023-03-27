@@ -13,7 +13,7 @@ import favicon from '../public/favicon.svg';
 export const links = () => {  
   return [ 
     {rel: 'stylesheet', href: styles}, 
-    {
+    { 
       rel: 'preconnect',   
       href: 'https://cdn.shopify.com',    
     },
