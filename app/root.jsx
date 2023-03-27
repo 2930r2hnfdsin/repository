@@ -2,7 +2,7 @@ import {
   Links,
   Meta,
   Outlet, 
-  Scripts,
+  Scripts, 
   ScrollRestoration,
   useLoaderData,
 } from '@remix-run/react';
