@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from '@remix-run/react';
-import styles from './styles/app.css';
+import styles from './styles/app.css'; 
 import favicon from '../public/favicon.svg';         
 
  
