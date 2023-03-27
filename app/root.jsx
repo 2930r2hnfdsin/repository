@@ -1,7 +1,7 @@
 import { 
   Links,
   Meta,
-  Outlet, 
+  Outlet,  
   Scripts, 
   ScrollRestoration,
   useLoaderData,
