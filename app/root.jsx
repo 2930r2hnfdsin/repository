@@ -11,7 +11,7 @@ import favicon from '../public/favicon.svg';
 
  
 export const links = () => {  
-  return [
+  return [ 
     {rel: 'stylesheet', href: styles}, 
     {
       rel: 'preconnect',  
